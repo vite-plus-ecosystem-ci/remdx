@@ -6,9 +6,9 @@ onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@^0.1.20
-  vitest: npm:@voidzero-dev/vite-plus-test@^0.1.20
-  vite-plus: ^0.1.20
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.fd1ae7eab160c92f3907a20e80e92d2e87403c20
+  vitest: 4.1.9
+  vite-plus: 0.0.0-commit.fd1ae7eab160c92f3907a20e80e92d2e87403c20
 overrides:
   vite: 'catalog:'
   vitest: 'catalog:'
