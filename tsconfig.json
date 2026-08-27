@@ -27,14 +27,5 @@
     "target": "es2022",
     "types": ["vite/client"]
   },
-  "exclude": ["dist/", "node_modules", "packages/create-remdx/template"],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "esnext",
-      "isolatedModules": false
-    },
-    "files": true,
-    "transpileOnly": true,
-    "transpiler": "ts-node/transpilers/swc"
-  }
+  "exclude": ["dist/", "node_modules", "packages/create-remdx/template"]
 }
