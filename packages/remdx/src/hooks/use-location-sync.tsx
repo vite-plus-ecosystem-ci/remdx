@@ -102,7 +102,7 @@ export default function useLocationSync({
           ...mapLocationToState(location),
           ...state,
         });
-        if (location.search != nextLocation.search) {
+        if (location.search !== nextLocation.search) {
           history.push(nextLocation);
         }
       },

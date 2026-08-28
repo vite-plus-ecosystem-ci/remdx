@@ -1,5 +1,5 @@
 import { useCallback, useLayoutEffect, useRef, useState } from 'react';
-import useResizeObserver, { ResizeHandler } from 'use-resize-observer';
+import { type ObservedSize, useResizeObserver } from 'use-resize-observer';
 
 export default function useAspectRatioFitting(aspectRatio: number) {
   const targetWidth = 1366;
@@ -8,8 +8,8 @@ export default function useAspectRatioFitting(aspectRatio: number) {
   const [scaleFactor, setScaleFactor] = useState(1);
   const [transformOrigin, setTransformOrigin] = useState({ x: 0, y: 0 });
 
-  const recalculate = useCallback<ResizeHandler>(
-    ({ height, width }) => {
+  const recalculate = useCallback(
+    ({ height, width }: ObservedSize) => {
       const containerWidth = Number(width) || 0.01;
       const containerHeight = Number(height) || 0.01;
 
@@ -50,7 +50,6 @@ export default function useAspectRatioFitting(aspectRatio: number) {
     recalculate(rects[0]);
   }, [targetWidth, targetHeight, recalculate]);
 
-  // @ts-expect-error
   useResizeObserver({
     onResize: recalculate,
     ref: containerRef,
