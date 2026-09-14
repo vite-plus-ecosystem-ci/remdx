@@ -1,6 +1,7 @@
+# This fork needs PR checks for release smoke tests. Remove these additions when upstream adds equivalent PR coverage.
 name: test
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   test:
@@ -12,9 +13,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: voidzero-dev/setup-vp@v1
+      - uses: voidzero-dev/setup-vp@v1.20.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: true
           run-install: true
+      - name: Build with the preview toolchain
+        run: vp run build
+      - name: Check the preview toolchain
+        run: vp check
       - run: vp run test:all
