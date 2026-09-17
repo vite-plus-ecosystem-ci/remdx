@@ -2,6 +2,7 @@ import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
   pack: {
+    deps: { resolveDepSubpath: true },
     clean: false,
     dts: true,
     entry: ['./index.tsx'],
