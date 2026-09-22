@@ -6,18 +6,14 @@ onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@^0.3.0
-  vitest: ^4.1.11
-  vite-plus: ^0.3.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.e0f77ee2353b38c77d7165d3305f9f6d705b4d62
+  vite-plus: 0.0.0-commit.e0f77ee2353b38c77d7165d3305f9f6d705b4d62
 overrides:
-  vite: 'catalog:'
-  vitest: 'catalog:'
+  vite@*: 'catalog:'
 peerDependencyRules:
   allowAny:
     - vite
-    - vitest
   allowedVersions:
     react: '*'
     react-dom: '*'
     vite: '*'
-    vitest: '*'
