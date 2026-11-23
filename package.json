@@ -24,7 +24,6 @@
     "eslint": "^10.12.0",
     "happy-dom": "^20.14.5",
     "oxc-transform-react": "^0.152.0",
-    "oxlint": "^1.94.0",
     "tsrs": "0.25.0-ts7.1.0-beta",
     "typescript": "^7.0.2",
     "vite": "catalog:",

@@ -6,8 +6,8 @@ onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@8.3.8000
-  vite-plus: 1.7.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
+  vite-plus: 0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
 overrides:
   vite@*: 'catalog:'
 peerDependencyRules:
@@ -19,3 +19,13 @@ peerDependencyRules:
     vite: '*'
 minimumReleaseAgeExclude:
   - '@nkzw/oxlint-config@3.0.0'
+  - '@voidzero-dev/vite-plus-core@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - '@voidzero-dev/vite-plus-darwin-arm64@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - '@voidzero-dev/vite-plus-darwin-x64@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - '@voidzero-dev/vite-plus-linux-arm64-gnu@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - '@voidzero-dev/vite-plus-linux-arm64-musl@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - '@voidzero-dev/vite-plus-linux-x64-gnu@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - '@voidzero-dev/vite-plus-linux-x64-musl@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - '@voidzero-dev/vite-plus-win32-arm64-msvc@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - '@voidzero-dev/vite-plus-win32-x64-msvc@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8'
+  - vite-plus@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
